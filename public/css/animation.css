@@ -1,0 +1,267 @@
+/* Hero Section */
+/* Keyframes untuk animasi */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animasi untuk elemen hero */
+.hero-left,
+.hero-right {
+    animation: fadeInUp 2s ease-out forwards;
+}
+
+/* Services Section */
+/* Keyframes untuk animasi fadeIn */
+@keyframes fadeInServices {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Keyframes untuk animasi masuk dari bawah */
+@keyframes slideInFromBottom {
+    from {
+        transform: translateY(50%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Keyframes untuk animasi masuk dari atas */
+@keyframes slideInFromTop {
+    from {
+        transform: translateY(-50%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Animasi untuk elemen services */
+.services .section-title {
+    opacity: 0;
+    will-change: opacity;
+    animation: fadeInServices 1s ease-out forwards;
+}
+
+.services .service {
+    opacity: 0;
+    will-change: transform, opacity;
+    animation: slideInFromBottom 1s ease-out forwards;
+}
+
+.services .service:nth-child(even) {
+    animation: slideInFromTop 1s ease-out forwards;
+}
+
+/* Skills Section */
+/* Animasi fade in */
+@keyframes fadeInSkills {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Animasi slide in dari kiri */
+@keyframes slideInLeftSkills {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Animasi slide in dari kanan */
+@keyframes slideInRightSkills {
+    0% {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Animasi slide in dari atas */
+@keyframes slideInTopSkills {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Tambahkan animasi ke elemen yang sesuai */
+.animate-fadeInSkills {
+    animation: fadeInSkills 2s ease;
+}
+
+.animate-slideInLeftSkills {
+    animation: slideInLeftSkills 3s ease;
+}
+
+.animate-slideInRightSkills {
+    animation: slideInRightSkills 3s ease;
+}
+
+.animate-slideInTopSkills {
+    animation: slideInTopSkills 2s ease;
+}
+
+/* Portofolio Section */
+/* Keyframes untuk animasi fadeIn */
+/* Animasi zoom in */
+@keyframes zoomIn {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Animasi portofolio */
+.portofolio {
+    animation: zoomIn 1.5s ease;
+}
+
+/* Skills Section */
+/* Animasi fade in */
+@keyframes fadeInSkills {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Animasi scale in */
+@keyframes scaleInSkills {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Animasi slide in dari bawah */
+@keyframes slideInFromBottomSkills {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animasi rotate in */
+@keyframes rotateInSkills {
+    0% {
+        opacity: 0;
+        transform: rotate(-180deg);
+    }
+    100% {
+        opacity: 1;
+        transform: rotate(0deg);
+    }
+}
+
+/* Tambahkan animasi ke elemen yang sesuai */
+.animate-fadeIn {
+    animation: fadeInSkills 1.5s ease-out forwards;
+}
+
+.animate-scaleIn {
+    animation: scaleInSkills 2s ease-out forwards;
+}
+
+.animate-slideInBottom {
+    animation: slideInFromBottomSkills 2s ease-out forwards;
+}
+
+.animate-rotateIn {
+    animation: rotateInSkills 1.5s ease-out forwards;
+}
+
+/* contact animation */
+/* Animasi zoom in */
+@keyframes zoomIn {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Animasi fade in */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Animasi slide in dari kiri */
+@keyframes slideInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Tambahkan animasi ke elemen yang sesuai */
+.animate-zoomIn {
+    animation: zoomIn 2s ease;
+}
+
+.animate-fadeIn {
+    animation: fadeIn 2s ease;
+}
+
+.animate-slideInLeft {
+    animation: slideInLeft 3s ease;
+}
